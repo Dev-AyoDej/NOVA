@@ -69,7 +69,7 @@
     }
  }
 
- @media (min-width: 718px) {
+ @media (min-width: 768px) {
     header {
         gap: 2rem;
     }
@@ -198,7 +198,7 @@
     }
 }
 
-@media (min-width: 718px) {
+@media (min-width: 768px) {
     .digitalagency {
     background-size: cover;
     background-position: right 85%;
@@ -346,7 +346,7 @@
     }
 }
 
-@media (min-width: 718px) {
+@media (min-width: 768px) {
     .about {
     background-size: cover;
     background-position: right 85%;
@@ -483,6 +483,7 @@
             font-size: x-small;
             margin-top: 2px;
         }
+
     }
     article:hover {
         background-color: #1D4ED8;
@@ -491,7 +492,7 @@
     }
 }
 
-@media (min-width: 718px) {
+@media (min-width: 768px) {
     .service {
     background: var(--white);
     padding: 1.2rem;
@@ -560,7 +561,7 @@
             gap: 0.6rem;
         }
         article {
-            width: 310px;
+            width: 325px;
             padding: 1rem;
             background: rgba(139, 92, 246, 0.2);
             border: 2px solid var(--primary-color);
@@ -586,6 +587,7 @@
 .project {
     padding: 1.2rem;
     box-sizing: border-box;
+    background: var(--light-gray);
     spa {
         font-family: var(--font-main);
         font-size: 10px;
@@ -659,7 +661,7 @@
     }
 }
 
-@media (min-width: 718px) {
+@media (min-width: 768px) {
     .project {
         spa {
             font-size: 13px;
@@ -693,11 +695,6 @@
                 font-size: small;
                 padding-left: 0.1rem;
             }
-            div span {
-                font-size: 19px;
-                color: var(--primary-color);
-                display: block;
-            }
         }
     }
 }
@@ -717,21 +714,350 @@
         }
 
         article {
-            width: 310px;
+            width: 325px;
             margin-top: 1rem;
             padding-bottom: 2rem;
             cursor: pointer;
+
+            div {
+                padding-top: 10px;
+            }
 
             div h5 {
                 font-family: var(--font-main-sub);
                 font-size: medium;
                 padding-left: 0.5rem;
             }
-            ul {
-                padding-left: 1.8rem;
+            div span {
+                display: flex;
+                padding-left: 8px ;
             }
             li {
                 font-size: small;
+                transform: translateX(18px);
+            }
+            li::marker {
+                font-size: 25px;
+            }
+            div span {
+                font-size: 25px;
+                color: var(--primary-color);
+                display: block;
+            }
+            ul li {
+                font-size: medium;
+            }
+        }
+    }
+}
+
+/* WHY CHOOSE US SECTION */
+.choose {
+    padding: 1.2rem;
+    box-sizing: border-box;
+    spa {
+        font-family: var(--font-main);
+        font-size: 10px;
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+    
+    h2 {
+        display: block;
+        font-size: large;
+        font-family: var(--font-heading);
+        font-size: 19px;
+        margin-top: 3px;
+    }
+    p {
+        display: block;
+        font-size: 10px;
+        font-family: var(--font-main);
+        width: 80%;
+    }
+    aside {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    article {
+        width: 200px;
+        margin-top: 1rem;
+        cursor: pointer;
+        padding: 0.6rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+
+            span {
+                font-size: 19px;
+                color: var(--primary-color);
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.05rem;
+
+            h5 {
+                font-size: 10px;
+            }
+            p {
+                width: 100%;
+                font-size: xx-small;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .choose {
+        spa {
+            font-size: 13px;
+        }
+        
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 12px;
+            width: 60%;
+        }
+       div {
+            display: flex;
+            flex-direction: row;
+            gap: 0.3rem;
+        }
+        aside {
+            display: flex;
+            flex-direction: row;
+            gap: 0.3rem;
+        }
+        article {
+            width: 183px;
+            margin-top: 1rem;
+            cursor: pointer;
+
+            div h5 {
+                font-family: var(--font-main-sub);
+                font-size: small;
+                padding-left: 0.1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .choose {
+        spa {
+            font-size: 15px;
+        }
+        
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 18px;
+            width: 50%;
+        }
+
+        article {
+            width: 325px;
+            margin-top: 1rem;
+            cursor: pointer;
+            gap: 2rem;
+
+            div h5 {
+                font-size: medium;
+            }
+            div p {
+                font-size: small;
+            }
+            span {
+                font-size: 25px;
+                color: var(--primary-color);
+                display: block;
+            }
+            ul li {
+                font-size: medium;
+            }
+        }
+    }
+}
+
+/* TESTIMONIAL SECTION */
+
+/* CONTACT SECTION */
+.contact {
+    padding: 1.2rem;
+    box-sizing: border-box;
+    spa {
+        font-family: var(--font-main);
+        font-size: 10px;
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+    
+    h2 {
+        display: block;
+        font-size: large;
+        font-family: var(--font-heading);
+        font-size: 19px;
+        margin-top: 3px;
+    }
+    p {
+        display: block;
+        font-size: 10px;
+        font-family: var(--font-main);
+        width: 80%;
+    }
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    article {
+        width: 270px;
+        margin-top: 1rem;
+        cursor: pointer;
+        padding: 0.6rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+
+            span {
+                font-size: 19px;
+                color: var(--primary-color);
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 0.05rem;
+
+            h5 {
+                font-size: 15px;
+                font-family: var(--font-heading-sub);
+            }
+            p {
+                width: 100%;
+                font-size: x-small;
+            }
+        }
+    }
+    form {
+        .inputbox {
+            width: 270px;
+            margin-top: 10px;
+            height: 25px;
+            border-radius: 6px;
+            outline: none;
+            padding: 1rem;
+            background: rgba(139, 92, 246, 0.2);
+            border: 1px solid var(--primary-color);
+            display: block;
+        }
+
+        .inputmsg {
+            width: 270px;
+            margin-top: 10px;
+            height: 65px;
+            border-radius: 6px;
+            padding-left: 1rem;
+            padding-top: 0.5rem;
+            outline: none;
+            background: rgba(139, 92, 246, 0.2);
+            border: 1px solid var(--primary-color);
+            display: block;
+        }
+
+        #sendmsgbtn {
+            margin-top: 10px;
+            width: 220px;
+            height: 38px;
+            background: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 7px;
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+     .contact {
+        spa {
+            font-size: 13px;
+        }
+        
+        h2 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 12px;
+            width: 60%;
+        }  
+        aside {
+            flex-direction: row;
+            gap: 5rem;
+        } 
+    }
+}
+
+@media (min-width: 1024px) {
+     .contact {
+        spa {
+            font-size: 15px;
+        }
+        
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 18px;
+            width: 50%;
+        }  
+        article {
+            width: 460px;
+            gap: 1rem;
+
+            div h5 {
+                font-size: medium;
+            }
+            div p {
+                font-size: medium;
+            }
+        }
+        aside {
+            gap: 12rem;
+        }
+
+        form {
+            .inputbox {
+                width: 360px;
+                margin-top: 10px;
+                height: 30px;
+                border-radius: 9px;
+                padding: 1rem;
+            }
+
+            .inputmsg {
+                width: 360px;
+                margin-top: 10px;
+                height: 80px;
+                border-radius: 9px;
+                padding-left: 1rem;
+                padding-top: 0.5rem;
+            }
+
+            #sendmsgbtn {
+                margin-top: 10px;
+                width: 220px;
+                height: 46px;
+                border-radius: 7px;
+                font-size: medium;
             }
         }
     }
